@@ -62,4 +62,4 @@ Example :- MySQL, PostgreSQL, MOngoDB, Oracle Database.
 
 A type of database system that stores data in structured tables (using rows and columns) and uses SQL (Structure query language) for managing and quering data.
 
-Example :- 
+Example :- MySQL, 
