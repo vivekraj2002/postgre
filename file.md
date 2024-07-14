@@ -247,7 +247,7 @@ Apache successfully restarted. You can now start using pgAdmin 4 in web mode at 
    INSERT INTO Raj (id, name, city) </br>
    VALUES </br>
    (101, 'Vivek', 'Noida'), </br>
-   (102, 'Aditya', 'DElhi'), </br>
+   (102, 'Aditya', 'Delhi'), </br>
    (103, 'Nitish', 'Haryana');
 
    **Output**
