@@ -19,9 +19,8 @@
 3. [Database vs DBMS](#Database-vs-DBMS)
 4. [What is RDBMS?](#What-is-RDBMS?)
 5. [Installation of PostgreSQL](#Installation-of-PostgreSQL)
-6. [Database vs Schema vs Table](#Database-vs-Schema-vs-Table)
-7. [What is CRUD](#What-is-CRUD)
-8. [Datatypes and Contraint]()
+6. [What is CRUD](#What-is-CRUD)
+7. [Datatypes and Contraint]()
 
 
 ## Introduction of PostgreSQL
@@ -199,26 +198,92 @@ The Apache web server is running and must be restarted for the pgAdmin 4 install
 Apache successfully restarted. You can now start using pgAdmin 4 in web mode at http://127.0.0.1/pgadmin4
 ```
 
-***step4*** Open file of pgadmin & change password
+   ***step4 :-*** Open file of pgadmin & change password
 
-Open file of pgadmin
+   Open file of pgadmin
 
-```
-vivek@phdsec:~$ sudo -i -u postgres
-[sudo] password for vivek: 
-direct://
-postgres@phdsec:~$ psql
-psql (16.3 (Ubuntu 16.3-1.pgdg20.04+1))
-Type "help" for help.
+   ```
+   vivek@phdsec:~$ sudo -i -u postgres
+   [sudo] password for vivek: 
+   direct://
+   postgres@phdsec:~$ psql
+   psql (16.3 (Ubuntu 16.3-1.pgdg20.04+1))
+   Type "help" for help.
 
-postgres=# ^C
-postgres=# 
-```
+   postgres=# ^C
+   postgres=# 
+   ```
+  
+   Change Password
 
-Change Password
+   ```
+   postgres=# \password
+   Enter new password for user "postgres":
+   Enter it again:
+  ```
+   ## What is CRUD
 
-```
-postgres=# \password
-Enter new password for user "postgres":
-Enter it again:
-```
+   CRUD stands for Create, Read, Update, and Delete. These are the four basic operations that can be performed on data in a database or a data store. Here’s a brief explanation of each operation:
+
+   ***1. Create :-***
+
+   This operation is used to add new records or data to a database.
+   Example: INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);
+
+   **Input Query**
+
+   <div style="text-align: center;">
+   <img src="./image/Craete input.png" alt="alt    text" >
+   </div>
+
+   **Output**
+
+   <div style="text-align: center;">
+   <img src="./image/create output .png" alt="alt text" >
+   </div>
+
+   **Create a table & Insert values in table**
+
+   INSERT INTO Raj (id, name, city) </br>
+   VALUES </br>
+   (101, 'Vivek', 'Noida'), </br>
+   (102, 'Aditya', 'DElhi'), </br>
+   (103, 'Nitish', 'Haryana');
+
+   **Output**
+    
+   <div style="text-align: center;">
+   <img src="./image/Create insert.png" alt="alt text" >
+   </div>
+
+   ***2. Read :-***
+
+   This operation is used to Reading data from the database.
+   Example: SELECT * FROM <table_name>
+   SELECT <column_name> Table
+
+   SELECT * FROM Raj; (* means whole column & Row)
+
+   <div style="text-align: center;">
+   <img src="./image/Read.png" alt="alt text" >
+   </div>   </br>
+
+   SELECT name FROM Raj; (mention name column to read only name)
+
+   <div style="text-align: center;">
+   <img src="./image/name read.png" alt="alt text" >
+   </div>
+
+
+   ***3. Update :-***
+
+   This operation is used to modify existing data in the database.
+   SQL Example: UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;
+
+   ***4. Delete :-***
+
+   This operation is used to remove data from the database.
+   SQL Example: DELETE FROM table_name WHERE condition;
+
+
+
