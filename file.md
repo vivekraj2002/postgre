@@ -20,7 +20,7 @@
 4. [What is RDBMS?](#What-is-RDBMS?)
 5. [Installation of PostgreSQL](#Installation-of-PostgreSQL)
 6. [What is CRUD](#What-is-CRUD)
-7. [Datatypes and Contraint]()
+7. [Datatypes and Constraint](#Datatypes-and-Constraint)
 
 
 ## Introduction of PostgreSQL
@@ -262,13 +262,17 @@ Apache successfully restarted. You can now start using pgAdmin 4 in web mode at 
    Example: SELECT * FROM <table_name>
    SELECT <column_name> Table
 
-   SELECT * FROM Raj; (* means whole column & Row)
+   SELECT * FROM Raj; (* means whole column & Row) </br>
+   
+   **Output** </br>
 
    <div style="text-align: center;">
    <img src="./image/Read.png" alt="alt text" >
    </div>   </br>
 
-   SELECT name FROM Raj; (mention name column to read only name)
+   SELECT name FROM Raj; (mention name column to read only name) </br>
+    
+   **Output** </br>
 
    <div style="text-align: center;">
    <img src="./image/name read.png" alt="alt text" >
@@ -278,12 +282,53 @@ Apache successfully restarted. You can now start using pgAdmin 4 in web mode at 
    ***3. Update :-***
 
    This operation is used to modify existing data in the database.
-   SQL Example: UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;
+    Example: UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition; 
+    </br>
+   
+   EX- UPDATE Raj  </br>
+    SET city='Banglore' </br>
+    WHERE  </br>
+    name= 'Aditya'; </br>
 
+   **Output** </br>
+
+   <div style="text-align: center;">
+   <img src="./image/update.png" alt="alt text" >
+   </div>   </br>
+   
    ***4. Delete :-***
 
    This operation is used to remove data from the database.
-   SQL Example: DELETE FROM table_name WHERE condition;
+   Example: DELETE FROM table_name WHERE condition;
+
+   EX- Delete FROM Raj </br>
+   WHERE id=102; </br>
+
+   **Output** </br>
+    
+   <div style="text-align: center;">
+   <img src="./image/Delete.png" alt="alt text" >
+   </div>
+   </br>
+
+   ## Datatypes and Constraint
+
+   **Datatypes:-**
+
+   An attribute that specifies the type of data in a column of our database-table.
+
+   **Most widely used are**
+
+   Numeric - INT DOUBLE FLOAT DECIMAL </br>
+   STRING - VARCHAR  </br>
+   DATE - DATE     </br>
+   BOOLEAN - BOOLEAN   </br>
+   
+
+
+
+   
+
 
 
 
