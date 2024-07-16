@@ -67,13 +67,14 @@ Example :- MySQL, PostgreSQL & Oracle etc.
 
 **Prerequsite for Installation**
 
-The minimum hardware required to install and run PostgreSQL is:
+The minimum hardware & software required to install and run PostgreSQL is:
 
-  1 GHz processor.
-  2 GB of RAM.
-  512 MB of HDD.
-  Linux (operating system)
-
+  1. GHz processor. </br>
+  2. GB of RAM.  </br>
+  3. Ubuntu 20.04.6 LTS (Operating system) </br>
+  4. 64 bit </br>
+  5. 512 MB of HDD.</br>
+  
 
 **Steps for Installation of PostgreSQL**
 
@@ -354,7 +355,7 @@ Apache successfully restarted. You can now start using pgAdmin 4 in web mode at 
    <img src="./image/primary key .png" alt="alt text" >
    </div>
 
-   
+
 
 
 
