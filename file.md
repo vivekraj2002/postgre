@@ -351,7 +351,7 @@ Apache successfully restarted. You can now start using pgAdmin 4 in web mode at 
     );
     </br>
 
-    <div style="text-align: center;">
+   <div style="text-align: center;">
    <img src="./image/primary key .png" alt="alt text" >
    </div>
 
