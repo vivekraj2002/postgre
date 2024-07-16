@@ -319,11 +319,46 @@ Apache successfully restarted. You can now start using pgAdmin 4 in web mode at 
 
    **Most widely used are**
 
-   Numeric - INT DOUBLE FLOAT DECIMAL </br>
+   NUMERIC - INT DOUBLE FLOAT DECIMAL </br>
    STRING - VARCHAR  </br>
    DATE - DATE     </br>
    BOOLEAN - BOOLEAN   </br>
    
+   EXAMPLE - DECIMAL (5,2) </br>
+
+   - 155.38 (it means total 5 digits & after decimal 2 digits)
+
+   **Constraint**
+
+   A Constraint in PostgreSQL is a rule applied to a column.
+
+   ***Primary Key*** 
+
+   - The PRIMARY KEY constraint uniquely identifies each record in a table. </br>
+   - Primary keys must contain UNIQUE values, and cannot contain NULL values. </br>
+   - A Table can have only ONE primary key.
+
+   EXAMPLE -</br> CREATE TABLE employees( </br> 
+   emp_id SERIAL PRIMARY KEY, </br> 
+	 fname VARCHAR(100) NOT NULL,  </br> 
+	 lname VARCHAR(100) NOT NULL,  </br> 
+	 email VARCHAR(100) NOT NULL UNIQUE, </br> 
+	 dept  VARCHAR(50), </br> 
+	 salary DECIMAL(10,2) DEFAULT 30000.00,  </br> 
+	 hire_date DATE NOT NULL   </br> 
+   DEFAULT CURRENT_DATE
+    );
+    </br>
+
+    <div style="text-align: center;">
+   <img src="./image/primary key .png" alt="alt text" >
+   </div>
+
+   
+
+
+
+
 
 
 
