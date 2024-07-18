@@ -65,12 +65,12 @@ Example :- MySQL, PostgreSQL & Oracle etc.
 
 ## Installation of PostgreSQL
 
-**Prerequsite for Installation**
+**Prerequisite for Installation**
 
 The minimum hardware & software required to install and run PostgreSQL is:
 
   1. GHz processor. </br>
-  2. GB of RAM.  </br>
+  2. 4 GB of RAM.  </br>
   3. Ubuntu 20.04.6 LTS (Operating system) </br>
   4. 64 bit </br>
   5. 512 MB of HDD.</br>
@@ -80,7 +80,7 @@ The minimum hardware & software required to install and run PostgreSQL is:
 
 ***Step 1 :-***  Command for install PostgreSQL
 
-``` sudo apt-get install postgresql-16 ```
+``` sudo apt-get install postgresql```
 
 ### Output 
 
@@ -129,7 +129,38 @@ psql (PostgreSQL) 16.3 (Ubuntu 16.3-1.pgdg20.04+1)
 
 We can use pgAdmin to do everything from writing basic SQL queries to monitoring our databases and configuring advanced database architectures 
 
-***Step1 :-*** ```sudo apt install pgadmin4```
+***Step1 :-*** Install the public key for the repository (if not done previously):
+
+```curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg```
+
+
+***Step2 :-*** Create the repository configuration file:
+
+```
+sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+```
+
+### Output
+
+```vivek@phdsec:~$ sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+Hit:1 https://brave-browser-apt-release.s3.brave.com stable InRelease
+Hit:2 https://deb.nodesource.com/node_20.x nodistro InRelease            	 
+Get:3 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]    
+Hit:4 http://in.archive.ubuntu.com/ubuntu focal InRelease                	 
+Get:5 https://packages.microsoft.com/repos/code stable/main arm64 Packages [17.5 kB]
+Get:34 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [208 kB]
+Fetched 13.6 MB in 14s (1,006 kB/s)                                      	 
+Reading package lists... Done
+Building dependency tree  	 
+Reading state information... Done
+5 packages can be upgraded. Run 'apt list --upgradable' to see them.
+N: Skipping acquire of configured file 'main/binary-i386/Packages' as repository 'https://brave-browser-apt-release.s3.brave.com stable InRelease' doesn't support architecture 'i386'
+N: Skipping acquire of configured file 'main/binary-i386/Packages' as repository 'https://apt.postgresql.org/pub/repos/apt focal-pgdg InRelease' doesn't support architecture 'i386'
+```
+
+
+
+***Step3 :-*** ```sudo apt install pgadmin4```
 
 ### Output
 
@@ -155,29 +186,8 @@ Processing triggers for hicolor-icon-theme (0.17-2) ...
 Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
 Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
 ```
-***Step2 :-*** Create the repository configuration file:
 
-```
-sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
-```
-
-### Output
-
-```
-vivek@phdsec:~$ sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
-Hit:1 https://brave-browser-apt-release.s3.brave.com stable InRelease
-Hit:2 https://deb.nodesource.com/node_20.x nodistro InRelease            	 
-Get:3 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]    
-Hit:4 http://in.archive.ubuntu.com/ubuntu focal InRelease                	 
-Fetched 13.6 MB in 14s (1,006 kB/s)                                      	 
-Reading package lists... Done
-Building dependency tree  	 
-Reading state information... Done
-5 packages can be upgraded. Run 'apt list --upgradable' to see them.
-N: Skipping acquire of configured file 'main/binary-i386/Packages' as repository 'https://brave-browser-apt-release.s3.brave.com stable InRelease' doesn't support architecture 'i386'
-N: Skipping acquire of configured file 'main/binary-i386/Packages' as repository 'https://apt.postgresql.org/pub/repos/apt focal-pgdg InRelease' doesn't support architecture 'i386'
-```
-***Step3 :-*** Configure the web server, if We installed pgadmin4-web
+***Step4 :-*** Configure the web server, if We installed pgadmin4-web
 
 ``` sudo /usr/pgadmin4/bin/setup-web.sh```
 
@@ -196,10 +206,10 @@ pgAdmin 4 - Application Initialisation
 Creating storage and log directories...
 We can now configure the Apache Web server for you. This involves enabling the wsgi module and configuring the pgAdmin 4 application to mount at /pgadmin4. Do you wish to continue (y/n)? y
 The Apache web server is running and must be restarted for the pgAdmin 4 installation to complete. Continue (y/n)? y
-Apache successfully restarted. You can now start using pgAdmin 4 in web mode at http://127.0.0.1/pgadmin4
+Apache successfully restarted. You can now start      using     pgAdmin 4 in web mode at http://127.0.0.1/pgadmin4
 ```
 
-   ***step4 :-*** Open file of pgadmin & change password
+   ***step5 :-*** Open file of pgadmin & change password
 
    Open file of pgadmin
 
