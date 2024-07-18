@@ -17,10 +17,11 @@
 1. [Introduction of PostgreSQL](#Introduction-of-PostgreSQL)
 2. [What is Database](#What-is-Database)
 3. [Database vs DBMS](#Database-vs-DBMS)
-4. [What is RDBMS?](#What-is-RDBMS?)
+4. [What is RDBMS](#what-is-RDBMS)
 5. [Installation of PostgreSQL](#Installation-of-PostgreSQL)
 6. [What is CRUD](#What-is-CRUD)
 7. [Datatypes and Constraint](#Datatypes-and-Constraint)
+8. [Clause](#clause)
 
 
 ## Introduction of PostgreSQL
@@ -31,7 +32,7 @@ Being an open-source software, its source code is available under PostgreSQL lic
 
 ## What is Database
 
-A database is an organized collection of data, stored and accessed electronically. Databases are used to store and manage large amounts of structured and unstructured data, and they can be used to support a wide range of activities, including data storage, data analysis, and data management. There are many different types of databases, including relational databases and NoSQL databases, and they can be used in a variety of settings, including business, scientific, and government organizations.
+A database is an organized collection of data, stored and accessed electronically. Databases are used to store and manage large amounts of structured and unstructured data, and they can be used to support a wide range of activities, including data storage, data analysis, and data management. 
 
 <div style="text-align: center;">
   <img src="./image/database.png" alt="alt text" >
@@ -57,7 +58,7 @@ Example :- MySQL, PostgreSQL, MOngoDB, Oracle Database.
 
 </br>
 
-## What is RDBMS?
+## What is RDBMS
 
 A type of database system that stores data in structured tables (using rows and columns) and uses SQL (Structure query language) for managing and quering data.
 
@@ -170,7 +171,7 @@ vivek@phdsec:~$ sudo apt install pgadmin4
 Reading package lists... Done
 Building dependency tree  	 
 Reading state information... Done
-The following packages were automatically installed and are no longer required:
+The following packages were automatically installed and  are no longer required:
   linux-headers-5.15.0-105-generic linux-hwe-5.15-headers-5.15.0-105
   linux-image-5.15.0-105-generic linux-modules-5.15.0-105-generic
   linux-modules-extra-5.15.0-105-generic
@@ -179,7 +180,7 @@ The following additional packages will be installed:
   libapache2-mod-wsgi-py3 pgadmin4-desktop pgadmin4-server pgadmin4-web
 The following NEW packages will be installed:
   libapache2-mod-wsgi-py3 pgadmin4 pgadmin4-desktop pgadmin4-server
-  pgadmin4-web
+pgadmin4-web
 Setting up pgadmin4 (8.9) ...
 Processing triggers for mime-support (3.64ubuntu1) ...
 Processing triggers for hicolor-icon-theme (0.17-2) ...
@@ -343,7 +344,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
 
    A Constraint in PostgreSQL is a rule applied to a column.
 
-   ***Primary Key*** 
+   **Primary Key** 
 
    - The PRIMARY KEY constraint uniquely identifies each record in a table. </br>
    - Primary keys must contain UNIQUE values, and cannot contain NULL values. </br>
@@ -364,6 +365,8 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    <div style="text-align: center;">
    <img src="./image/primary key .png" alt="alt text" >
    </div>
+
+   ## Clause
 
 
 
