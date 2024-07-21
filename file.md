@@ -476,53 +476,29 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    
    ## JOINS
 
-   A PostgreSQL JOIN statement is used to combine data or rows from one(self-JOIN) or more tables based on a common field between them. These common fields are generally the Primary key of the first table and the Foreign key of other tables.
+   JOIN operation is used to combine rows
+   from two or more tables based on a related
+   column between them.
+
+   <div style="text-align: center;">
+   <img src="./image/join.png" alt="alt text" >
+   </div> </br>
+
 
    **Types of JOINS**
 
-   - Inner JOIN
-   - Left JOIN
-   - Right JOIN
+   - ***Cross Join :-*** Every row from one table is combined with every row from another table. 
+   - ***Inner Join :-*** Returns only the rows where there is a match between the specified columns in both the left (or first) and right (or second) tables.
+   - ***Left Join :-*** Returns all rows from the left (or first) table and the matching rows from the right (or second) table.
+   - ***Right Join :-*** Returns all rows from the right (or second) table and the matching rows from the left (or first) table.
 
-   Ex- Create a database name zoo 
    
-   ```
-   -- Create 1st table zoo_1
-
-   CREATE TABLE zoo_1 (
-    id INT PRIMARY KEY,
-    animal VARCHAR(100) NOT NULL
-   );
-
-   -- Create 2nd table zoo_2
-
-   CREATE TABLE zoo_2 (
-    id INT PRIMARY KEY,
-    animal VARCHAR(100) NOT NULL
-   );
-
-   -- Insert data into zoo_1
-
-   INSERT INTO zoo_1 (id, animal)
-   VALUES
-    (1, 'Lion'),
-    (2, 'Tiger'),
-    (3, 'Wolf'),
-    (4, 'Fox');
-
-   -- Insert data into zoo_2
-
-    INSERT INTO zoo_2 (id, animal)
-    VALUES
-    (1, 'Tiger'),
-    (2, 'Lion'),
-    (3, 'Rhino'),
-    (4, 'Panther'); 
-   ```
    
    ## Conclusion
 
    PostgreSQL is a powerful free database known for its flexibility, reliability, and help from a large community. It works well for all kinds of projects, big or small, because it's stable, follows industry standards, and handles complicated jobs easily.
+
+
 
 
 
