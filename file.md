@@ -21,7 +21,8 @@
 5. [Installation of PostgreSQL](#Installation-of-PostgreSQL)
 6. [What is CRUD](#What-is-CRUD)
 7. [Datatypes and Constraint](#Datatypes-and-Constraint)
-8. [Clause](#clause)
+8. [Operators](#operators)
+9. [Clause](#clause)
 
 
 ## Introduction of PostgreSQL
@@ -366,7 +367,127 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    <img src="./image/primary key .png" alt="alt text" >
    </div>
 
+   ## Operators
+
+   - ### Equal To 
+   The `=` operator is used when you want to return all records where a column is equal to a specified value:
+   ```
+   SELECT * FROM employees
+   WHERE dept = 'IT';
+   ```
+   **Output**
+
+   <div style="text-align: center;">
+   <img src="./image/operator.png" alt="alt text" >
+   </div> </br>
+
+   - ### Less Than
+   The `<` operator is used when we want to return all records where a column is less than a specified value.
+   ```
+   SELECT * FROM Employees,
+   WHERE Salary < 50000; 
+   ```
+   ### Other some operators are:
+   `=`	Equal to  
+   `<`	Less than  
+   `>`	Greater than  
+   `<=`	Less than or equal to  
+   `>=`	Greater than or equal to  
+   `<>`	Not equal to  
+   `!=`	Not equal to  
+   `AND`	Logical AND  
+   `OR`	Logical OR  
+   `IN`	Check if a value is between a range of values  
+   `BETWEEN`	Check if a value is between a range of values  
+   `IS NULL`	Check if a value is NULL  
+
    ## Clause
+
+   - Where
+   - Distinct
+   - Order By
+   - Limit
+   - Like
+
+   1. **Where**
+
+   The WHERE clause is used in a PostgreSQL statement to filter data based on conditions specified in the WHERE clause. The WHERE clause can be used to filter data based on a single criteria or multiple criteria.
+
+   Ex- 
+   ```
+   SELECT * FROM employees 
+   WHERE dept = 'IT'  
+   OR dept = 'HR'     
+   OR dept = 'Finance'; 
+   ```
+   2. **Distinct**
+
+   The DISTINCT statement is used to return only distinct (different) values.
+
+   EX-
+   ```
+   SELECT DISTINCT fname FROM employees;
+   ```
+
+   **Order By**
+
+   The ORDER BY keyword is used to sort the result in ascending or descending order.
+
+   Ex- 
+   ```
+   SELECT * FROM employees ORDER BY fname;
+   ```
+
+   **Limit**
+
+   The LIMIT clause is used to limit the maximum number of records to return.
+
+   EX-
+   ```
+   SELECT * FROM employees LIMIT 3;
+   ```
+   **Like**
+
+   The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+
+   The two wildcards used with the LIKE operator are:
+
+   - % The percent sign represents zero, one, or multiple characters
+   - _ The underscore sign represents one, single character
+    
+   ***To return records that starts with a specific letter or phrase, add the % at the end of the letter or phrase.***
+
+   EX- 
+   ```
+   Select * FROM employees
+   WHERE fname LIKE 'A%'; 
+   ``` 
+
+   ***Return all last name from a lname that starts with 'K' followed by one wildcard character, then 'ar' and then two wildcard characters:***
+
+   EX-
+   ```
+   Select * FROM employees 
+   WHERE lname LIKE 'k__ar';
+   ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+   
 
 
 
