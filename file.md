@@ -472,7 +472,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    Select * FROM employees 
    WHERE lname LIKE 'k__ar';
    ``` 
-   </br>
+   
    
    ## JOINS
 
