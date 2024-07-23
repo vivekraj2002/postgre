@@ -56,17 +56,16 @@ Example :- Customer data (Name, Address & Contact No.)
 
 </br>
 
-**DBMS (Database Management System):** It is a software that provides an interface for users to interact with databases. It allows users to create, manage, manipulate, and query databases efficiently.DBMS handles tasks such as data storage, retrieval, updating, security, and data integrity
+**DBMS (Database Management System):** A Database Management System (DBMS) is software that helps manage and organize data. It lets users create, change, and query a database while also handling security and access controls.
 
-Example :- MySQL, PostgreSQL, MOngoDB, Oracle Database. 
+A DBMS makes storing and retrieving data easy and efficient.
 
+Example :- MySQL, PostgreSQL, MongoDB, Oracle Database. 
 </br>
 
 ## What is RDBMS
 
-A type of database system that stores data in structured tables (using rows and columns) and uses SQL (Structure query language) for managing and quering data.
-
-Example :- MySQL, PostgreSQL & Oracle etc.
+A relational database management system (RDBMS) stores data in tables with rows and columns. It's widely used in industries due to its popularity. Each table has a key field called a primary key, which uniquely identifies each record. This primary key helps in referencing records easily. Examples of RDBMS include Oracle Database, MySQL, and Microsoft SQL Server.
 
 ## Installation of PostgreSQL
 
