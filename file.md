@@ -25,6 +25,7 @@
 9. [Clause](#clause)
 10. [JOINS](#JOINS)
 11. [Conclusion](#Conclusion)
+12. [Reference link](#Reference-link)
 
 
 ## Introduction of PostgreSQL
@@ -73,7 +74,7 @@ Example :- MySQL, PostgreSQL & Oracle etc.
 
 The minimum hardware & software required to install and run PostgreSQL is:
 
-  1. GHz processor. </br>
+  1. Pentium processor. </br>
   2. 4 GB of RAM.  </br>
   3. Ubuntu 20.04.6 LTS (Operating system) </br>
   4. 64 bit </br>
@@ -240,10 +241,17 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
 
    CRUD stands for Create, Read, Update, and Delete. These are the four basic operations that can be performed on data in a database or a data store. Here’s a brief explanation of each operation:
 
+   **Firstly we will create a database for creating a  table to perform CRUD operation**
+
+   <div style="text-align: center;">
+   <img src="./image/database1.png" alt="alt  text" >
+   </div> </br>
+
    ***1. Create :-***
 
    This operation is used to add new records or data to a database.
-   Example: INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);
+   Example: 
+   INSERT INTO table_name (column1, column2, ...)</br> VALUES (value1, value2, ...);
 
    **Input Query**
 
@@ -274,8 +282,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    ***2. Read :-***
 
    This operation is used to Reading data from the database.
-   Example: SELECT * FROM <table_name>
-   SELECT <column_name> Table
+   Example: SELECT * FROM <table_name>  </br>
 
    SELECT * FROM Raj; (* means whole column & Row) </br>
    
@@ -465,7 +472,8 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    WHERE fname LIKE 'A%'; 
    ``` 
 
-   ***Return all last name from a lname that starts with 'K' followed by one wildcard character, then 'ar' and then two wildcard characters:***
+   ***Return all last name from a lname that starts with 'K' followed by one wildcard character, then 'ar' and then two wildcard characters.
+   ***
 
    EX-
    ```
@@ -493,10 +501,15 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    - ***Right Join :-*** Returns all rows from the right (or second) table and the matching rows from the left (or first) table.
 
    
-   
-   ## Conclusion
 
+   ## Conclusion
+   
    PostgreSQL is a powerful free database known for its flexibility, reliability, and help from a large community. It works well for all kinds of projects, big or small, because it's stable, follows industry standards, and handles complicated jobs easily.
+
+   
+   ## Reference link 
+
+
 
 
 
