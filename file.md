@@ -494,12 +494,21 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
 
    **Types of JOINS**
 
-   - ***Cross Join :-*** Every row from one table is combined with every row from another table. 
-   - ***Inner Join :-*** Returns only the rows where there is a match between the specified columns in both the left (or first) and right (or second) tables.
-   - ***Left Join :-*** Returns all rows from the left (or first) table and the matching rows from the right (or second) table.
-   - ***Right Join :-*** Returns all rows from the right (or second) table and the matching rows from the left (or first) table.
+   - ***Cross Join :-***  Returns the Cartesian product of both tables. Every row from the first table is combined with every row from the second table.
 
-   
+    Example: Combine every employee with every department. </br>
+
+   - ***Inner Join :-*** Returns only the rows where there is a match in both tables.
+
+   Ex- Show employees and their department names, but only if they have a department. </br>
+
+   - ***Left Join :-*** Returns all rows from the left table, and the matched rows from the right table. If there's no match, the result is NULL from the right side.
+
+    Example: Show all employees and their department names, including employees without a department.</br>
+
+   - ***Right Join :-*** Returns all rows from the right table, and the matched rows from the left table. If there's no match, the result is NULL from the left side.
+
+    Example: Show all departments and their employees, including departments with no employees. </br>
 
    ## Conclusion
    
@@ -507,6 +516,10 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
 
    
    ## Reference link 
+
+   - [Posgress official documentation](https://www.postgresql.org/)
+
+   - [Postgresql tutorial](https://www.geeksforgeeks.org/postgresql-tutorial/)
 
 
 
