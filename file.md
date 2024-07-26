@@ -332,9 +332,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    </div>
    </br>
 
-   ## Datatypes and Constraint
-
-   **Datatypes:-**
+   ## Datatypes 
 
    An attribute that specifies the type of data in a column of our database-table.
 
