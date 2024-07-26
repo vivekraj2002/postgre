@@ -10,7 +10,7 @@
 </br>
 
 
-<h1 style="text-align: center;"> Table of content </h1>
+<h1 style="text-align: center;"> Table of contents </h1>
 
 # PostgreSQL
 
@@ -78,6 +78,14 @@ The minimum hardware & software required to install and run PostgreSQL is:
   3. Ubuntu 20.04.6 LTS (Operating system) </br>
   4. 64 bit </br>
   5. 512 MB of HDD.</br>
+
+  **My system configurations**
+
+  1. 11th gen intel processor
+  2. 8 GB of RAM
+  3. Ubuntu 24.04 LTS
+  4. 64 bit
+  5. 256 GB SSD
   
 
 **Steps for Installation of PostgreSQL**
@@ -338,7 +346,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
 
    **Most widely used are**
 
-   NUMERIC - INT DOUBLE FLOAT DECIMAL </br>
+   NUMERIC - INT, DOUBLE, FLOAT, DECIMAL </br>
    STRING - VARCHAR  </br>
    DATE - DATE     </br>
    BOOLEAN - BOOLEAN   </br>
@@ -473,7 +481,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
 
    - ***Inner Join :-*** Returns only the rows where there is a match in both tables.
 
-   Ex- Show employees and their department names, but only if they have a department. 
+    Example: Show employees and their department names, but only if they have a department. 
 
    - ***Left Join :-*** Returns all rows from the left table, and the matched rows from the right table. If there's no match, the result is NULL from the right side.
 
