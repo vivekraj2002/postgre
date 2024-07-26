@@ -471,19 +471,19 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
 
    - ***Cross Join :-***  Returns the Cartesian product of both tables. Every row from the first table is combined with every row from the second table.
 
-    Example: Combine every employee with every department. </br>
+    Example: Combine every employee with every department. 
 
    - ***Inner Join :-*** Returns only the rows where there is a match in both tables.
 
-   Ex- Show employees and their department names, but only if they have a department. </br>
+   Ex- Show employees and their department names, but only if they have a department. 
 
    - ***Left Join :-*** Returns all rows from the left table, and the matched rows from the right table. If there's no match, the result is NULL from the right side.
 
-    Example: Show all employees and their department names, including employees without a department.</br>
+    Example: Show all employees and their department names, including employees without a department.
 
    - ***Right Join :-*** Returns all rows from the right table, and the matched rows from the left table. If there's no match, the result is NULL from the left side.
 
-    Example: Show all departments and their employees, including departments with no employees. </br>
+    Example: Show all departments and their employees, including departments with no employees. 
 
    ## Conclusion
    
