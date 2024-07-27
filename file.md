@@ -374,7 +374,6 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    `>`	Greater than  
    `<=`	Less than or equal to  
    `>=`	Greater than or equal to  
-   `<>`	Not equal to  
    `!=`	Not equal to  
    `AND`	Logical AND  
    `OR`	Logical OR  
