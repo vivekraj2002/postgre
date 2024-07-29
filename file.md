@@ -23,9 +23,9 @@
 7. [Datatypes](#Datatypes)
 8. [Operators](#operators)
 9. [Clause](#clause)
-10. [JOINS](#JOINS)
-11. [Conclusion](#Conclusion)
-12. [Reference link](#Reference-link)
+<!-- 10. [JOINS](#JOINS) -->
+10. [Conclusion](#Conclusion)
+11. [Reference link](#Reference-link)
 
 
 ## Introduction of PostgreSQL
@@ -359,7 +359,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    ## Operators
 
    - ### Equal To 
-   The `=` operator is used when you want to return all records where a column is equal to a specified value:
+   The `=` operator is used when we want to return all records where a column is equal to a specified value:
    ```
    SELECT * FROM employees
    WHERE dept = 'IT';
@@ -460,7 +460,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    WHERE lname LIKE 'k__ar';
    ``` 
    
-   
+<!--    
    ## JOINS
 
    JOIN operation is used to combine rows
@@ -488,7 +488,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
 
    - ***Right Join :-*** Returns all rows from the right table, and the matched rows from the left table. If there's no match, the result is NULL from the left side.
 
-    Example: Show all departments and their employees, including departments with no employees. 
+    Example: Show all departments and their employees, including departments with no employees.  -->
 
    ## Conclusion
    
