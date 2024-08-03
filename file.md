@@ -460,7 +460,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
    WHERE lname LIKE 'k__ar';
    ``` 
    
-<!--    
+   
    ## JOINS
 
    JOIN operation is used to combine rows
@@ -488,7 +488,7 @@ Apache successfully restarted. You can now start      using     pgAdmin 4 in web
 
    - ***Right Join :-*** Returns all rows from the right table, and the matched rows from the left table. If there's no match, the result is NULL from the left side.
 
-    Example: Show all departments and their employees, including departments with no employees.  -->
+    Example: Show all departments and their employees, including departments with no employees. 
 
    ## Conclusion
    
